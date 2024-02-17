@@ -42,10 +42,6 @@ To get started, follow these steps:
 - Access the registration form at `/register`.
 - Access the login form at `/login`.
 
-## Contributing
-
-Contributions are welcome! Feel free to submit pull requests or open issues if you encounter any problems or have suggestions for improvements.
-
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
