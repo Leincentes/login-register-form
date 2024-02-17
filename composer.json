@@ -1,0 +1,31 @@
+{
+    "name": "minichan/minichan",
+    "description": "A grpc server library.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Minichan\\": "lib/",
+            "Services\\": "Services/",
+            "GPBMetadata\\Proto\\": "GPBMetadata/Proto/",
+            "PHP\\": "PHP/",
+            "Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Niel",
+            "email": "leincentes@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require-dev": {
+        "google/protobuf": "dev-master",
+        "swoole/ide-helper": "dev-master",
+        "phpunit/phpunit": "10.5.x-dev",
+        "eftec/bladeone": "dev-master"
+    },
+    "require": {
+        "minichan-database/minichan-database": "dev-main"
+    }
+}

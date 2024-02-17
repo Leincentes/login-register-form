@@ -1,0 +1,11 @@
+#!/usr/bin/php
+<?php
+declare(strict_types=1);
+
+require_once __DIR__ . '/vendor/autoload.php';
+
+$cli = new \Minichan\Cli\Cli();
+
+$cli->addCommand(new \Minichan\Cli\ServeCommand());
+
+$cli->run($argv);
