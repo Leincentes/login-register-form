@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package PHP.LoginRegister;
+
+message Users {
+    int32 userId = 1;
+    int32 uniqueId = 2;
+    string fname = 3;
+    string lname = 4;
+    string email = 5;
+    string password = 6;
+    string img = 7;
+}
+
+message Response {
+    bool success = 1;
+    string error_message = 2;
+    Users users = 3;
+}
+
+service LoginRegisterService {
+    rpc AddUser(stream Users) returns (stream Response);
+    rpc LoginUser(stream Users) returns (stream Response);
+}
